@@ -1,0 +1,445 @@
+﻿/*Login Page*/
+.loginPageText {
+    font-size: larger;
+    color: #ffffff;
+    align-content: center;
+}
+
+.errorMessage {
+    color: red;
+    font-size: large;
+}
+.logoContainer {
+    float: left;
+    width: 50%;
+}
+
+.elementsContainer {
+    float: right;
+    width: 50%;
+}
+
+/*For all*/
+h1 {
+    color: #1A7C89;
+    text-align: center;
+    font-size: 70px;
+    padding: 20px 0px 30px;
+}
+
+h2 {
+    color: #ffffff;
+    text-align: center;
+    font-size: 45px;
+}
+
+h3 {
+    color: #1A7C89;
+    text-align: center;
+    font-size: 30px;
+}
+
+.mainButton {
+    background-color: #0B363E;
+    border: none;
+    color: #ffffff;
+    width: 200px;
+    font-weight: bold;
+    padding: 10px 5px;
+    margin: 10px 5px;
+    cursor: pointer;
+    border-radius: .2rem;
+}
+
+.mainButton:hover, .mainButton:focus {
+    box-shadow: 0 0 0 2px white;
+    background-color: #0B363E;
+}
+
+
+.textBox {
+    background-color: #09101E;
+    border-color: #92C354;
+    border-radius: .2rem;
+    color: #ffffff;
+    margin-bottom: 10px;
+    width: 40%;
+    box-sizing: border-box;
+    padding: 15px;
+}
+
+.searchBar {
+    display: flex;
+    width: 100%;
+}
+
+.searchBar label {
+    color: #ffffff;
+    font-size: large;
+    margin: 0;
+    padding: 0;
+    padding-top: .1em;
+    padding-right: 2em;
+    width: 10em;
+    float: left;
+    display: block;
+    text-align: left;
+}
+
+.navbarIcon {
+    width: 40px;
+    background: #09101E;
+}
+
+.inputContainer {
+    display: flex;
+    width: 100%;
+}
+
+.loginInputContainer {
+    display: flex;
+    width: 100%;
+
+}
+
+.loginInputContainer label {
+    color: #ffffff;
+    font-size: large;
+    margin: 0;
+    padding: 0;
+    padding-top: .1em;
+    padding-right: 2em;
+    width: 10em;
+    float: left;
+    display: block;
+    text-align: left;
+}
+.inputContainer label {
+    color: #ffffff;
+    font-size: large;
+    padding-top: .1em;
+    padding-right: 2em;
+    width: 20em;
+    float: left;
+    display: block;
+    text-align: left;
+    height: 29px;
+    padding-left: 0;
+    padding-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+}
+
+.gridSearchTable {
+    border-style: none;
+    border-color: inherit;
+    border-width: medium;
+    min-width: 80%;
+    color: #ffffff;
+}
+
+.gridSearchTable th, td {
+    padding: 5px;
+}
+
+.gridHeader {
+    background-color: #000000;
+    text-align: center;
+    border: none 0px transparent;
+    height: 25px;
+    font-size: 16px;
+}
+
+.gridRow {
+    background-color: #1A7C89;
+    text-align: left;
+    border: none 0px transparent;
+    font-size: 14px;
+    height: 20px;
+}
+
+.gridAltRow {
+    background-color: #135361;
+    text-align: left;
+    border: none 0px transparent;
+    font-size: 14px;
+    height: 20px;
+}
+
+.gridRow:hover, .gridAltRow:hover {
+    background-color: #92C354;
+    color: #000000;
+}
+
+.selectedRow {
+    background-color: #92C354;
+    color: #000000;
+    font-weight: bold;
+}
+
+/*New Css*/
+a,
+a:hover,
+a:focus {
+    color: inherit;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+.navbar {
+    background-color: #09101E;
+    padding: 5px 5px;
+    border: none;
+    color: #ffffff;
+    border-radius: 0;
+    margin-bottom: 10px;
+}
+
+.navbar-btn {
+    box-shadow: none;
+    outline: none !important;
+    border: none;
+}
+
+.wrapper {
+    display: block;
+    width: 100%;
+}
+
+.sidebar {
+    width: 250px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    z-index: 999;
+    background: #2097A7;
+    color: #ffffff;
+    transition: all 0.3s;
+}
+
+.sidebar.active {
+    margin-left: -250px;
+}
+
+.sidebar .sidebarHeader {
+    padding: 20px;
+    background: #2097A7;
+}
+
+.sidebar ul.components {
+    padding: 20px 0px;
+}
+
+.sidebar ul a {
+    padding: 10px;
+    font-size: 1.1em;
+    display: block;
+}
+
+.dashboardIconContainer a:hover, .navIconContainer a:hover {
+    font-weight: bold;
+}
+
+.sidebar ul li a:hover {
+    color: #2097A7;
+    background: #ffffff;
+}
+
+.sidebar ul li.active>a,
+a[aria-expanded="true"] {
+    color: #2097A7;
+    background: #09101E;
+}
+
+a[data-toggle="collapse"] {
+    position: relative;
+}
+
+.dropdown-toggle::after {
+    display:block;
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+}
+
+ul ul a {
+    font-size: 0.9em !important;
+    padding-left: 30px !important;
+    background: #09101E;
+}
+
+.content {
+    width: calc(100% - 250px);
+    padding: 20px;
+    min-height: 100vh;
+    transition: all 0.3s;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.content.active {
+    width: 100%;
+}
+
+@media(max-width: 768px) {
+    #sidebar {
+        margin-left: -250px;
+    }
+    #sidebar.active{
+        margin-left: 0px;
+    }
+    #content {
+        width: 100%;
+    }
+    #content.active {
+        width: calc(100% - 250px);
+    }
+    #sidebarCollapse span{
+        display: none;
+    }
+}
+/*New Css*/
+
+.dashboard {
+    align-content: center;
+    align-items: center;
+    vertical-align: middle;
+    display: inline;
+    text-align: center;
+    width: 90%;
+}
+
+.dashboardIcons {
+    width: 110px;
+    background-color: #09101E;
+    border: none;
+}
+
+.dashboardIconText {
+    font-size: larger;
+}
+
+.dashboardIconContainer {
+    width: 33%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1%;
+    color: #ffffff;
+}
+
+/*Login Page*/
+.lnkButton a:hover {
+    font-weight: bold;
+}
+
+
+.navItems {
+    float: right;
+    padding: 0px 10px 10px 10px;
+}
+
+/********************/
+/*Registration Form*/
+/********************/
+#regForm{
+    width: 75%;
+    margin: 50px;
+    text-align: center;
+    position: relative;
+    align-content: center;
+    align-items:center;
+}
+
+#regForm fieldset {
+    background: #135361;
+    border: 0 none;
+    border-radius: .2rem;
+    box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.4);
+    padding: 20px 30px;
+    box-sizing: border-box;
+    width: 80%;
+    margin: 0 10%;
+    /*Stacking fieldsets above each other*/
+    position: relative;
+}
+
+/*Hide all except first fieldset*/
+#regForm fieldset:not(:first-of-type) {
+    display: none;
+}
+
+.fsTitle {
+    font-size: 35px;
+    text-transform: uppercase;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+.fsSubtitle {
+    font-weight: normal;
+    font-size: 25px;
+    color: #969595;
+    margin-bottom: 20px;
+}
+
+/***************/
+/* Progess Bar */
+/***************/
+.progBar {
+    width: 100%;
+}
+
+#progressBar {
+    margin-bottom: 30px;
+    overflow: hidden;
+    /*CSS counters to number the steps*/
+    counter-reset: step;
+}
+
+#progressBar li {
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 18px;
+    width: 33.33%;
+    float: left;
+    position: relative;
+}
+
+#progressBar li:before {
+    content: counter(step);
+    counter-increment: step;
+    width: 100%;
+    line-height: 20px;
+    font-size: 18px;
+    color: #333333;
+    background: white;
+    border-radius: .2rem;
+    margin: 0 auto 5px auto;
+}
+
+/*Progress Bar Connectors*/
+#progressBar li:after {
+    content: '';
+    width: 100%;
+    height: 2px;
+    position: absolute;
+    background: #ffffff;
+    left: 10%;
+    top: 9px;
+    z-index: -1; /*Puts it behind the numbers*/
+}
+
+#progressbar li:first-child:after {
+    /*connector not needed before the first step*/
+    content: none;
+}
+/*marking active/completed steps green*/
+/*The number of the step and the connector before it = green*/
+#progressbar li.active:before, #progressbar li.active:after {
+    background: #27AE60;
+    color: white;
+}
